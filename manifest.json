@@ -1,0 +1,18 @@
+{
+  "name": "Injector",
+  "description": "Inject JS into Blooket",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.blooket.com/play*",
+        "*://*.blooket.com/host*"
+        
+      ],
+      "js": ["app.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
